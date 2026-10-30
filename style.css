@@ -97,7 +97,7 @@ footer {
             border: 1px solid black;
         }
         caption {
-            font-weight:bold; color: blue
+            font-weight:bold; color: blue;
         }
         th {
             background-color: yellow;
