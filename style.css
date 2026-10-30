@@ -1,44 +1,96 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La mia scheda personale</title>
-    </head>
-<body>
-    <!-- Intestazione della pagina -->
-    <header>
-      <h1>Mi presento!</h1>
-      <p>La mia prima pagina con HTML e CSS</p>
 
-</header>
-<!-- Contenuto principale -->
-<main>
-    <article class="scheda">
-      <h2>Sonia Frazzitta</h2>
-      <p class="descrizione">
-          Ciao! Sono Sonia, frequento un corso di informatica
-          e sto imparando a creare pagine web.
-      </p>
-      <h3>I miei interessi</h3>
-      <ul>
-        <li>Programmazione</li>
-        <li>Musica</li>
-        <li>Sport</li>
-      </ul>
-      <p>
-          Il mio obiettivo è
-          <strong>creare il mio primo sito web</strong>.
-      </p>
-      <a class="pulsante" href="mailto:marco@example.com">
-          Scrivimi
-      </a>
+/* Include padding e bordi nelle dimensioni degli elementi */
+* {
+    box-sizing: border-box;
+}
 
-      </article>
-  </main>
-  <!-- Piè di pagina -->
-  <footer>
-        <p>Esercitazione di laboratorio — HTML e CSS</p>
-      </footer>
-</body>
-</html>
+/* Aspetto generale della pagina */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #243247;
+    background-color: #edf2f7;
+}
+
+/* Intestazione */
+header {
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    background-color: #244a73;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 8px 0 0;
+}
+
+/* Spazio intorno al contenuto principale */
+main {
+    padding: 30px 20px;
+}
+
+/* Scheda personale */
+.scheda {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #d3dfec;
+    border-radius: 12px;
+}
+
+/* Nome della persona */
+.scheda h2 {
+    margin-top: 0;
+    color: #244a73;
+}
+
+/* Paragrafo introduttivo */
+.descrizione {
+    color: #526174;
+}
+
+/* Elenco degli interessi */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Collegamento con aspetto di pulsante */
+.pulsante {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #244a73;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Aspetto del collegamento al passaggio del mouse */
+.pulsante:hover {
+    background-color: #17334f;
+}
+
+/* Evidenza del collegamento quando selezionato con la tastiera */
+.pulsante:focus-visible {
+    outline: 3px solid #b54e00;
+    outline-offset: 4px;
+}
+
+/* Piè di pagina */
+footer {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #526174;
+}
