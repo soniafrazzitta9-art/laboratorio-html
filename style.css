@@ -107,18 +107,10 @@ footer {
         }
       
    
-.card {
-    width: 300px;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 12px;
-    padding: 15px;
+.stella {
+    color: gold;
+    font-size: 60px;
     text-align: center;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
 }
 
 .card h2 {
